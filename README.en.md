@@ -4,6 +4,8 @@
 
 **ThinkFlow AI** is a next-generation, local-first, AI-driven mind mapping tool built with Vue 3 and VueFlow. More than just a drawing app, it serves as a "brain augmentor" that thinks with you. By combining the divergent capabilities of LLMs (Large Language Models) with structured visualization, ThinkFlow AI rapidly transforms fuzzy ideas into clear, deep knowledge systems.
 
+This project was built through Vibe Coding (requirement-driven, AI-assisted iteration).
+
 ---
 
 ## 🔗 Live Demo
