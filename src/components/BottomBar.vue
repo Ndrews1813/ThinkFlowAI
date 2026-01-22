@@ -32,7 +32,7 @@ const emit = defineEmits<{
 </script>
 
 <template>
-    <div class="fixed bottom-6 md:bottom-8 left-1/2 -translate-x-1/2 z-50 flex flex-col items-center gap-4 w-full max-w-2xl px-4 md:px-6">
+    <div class="fixed bottom-4 md:bottom-6 left-1/2 -translate-x-1/2 z-50 flex flex-col items-center gap-4 w-full max-w-2xl px-4 md:px-6">
         <div class="flex items-center gap-2 md:gap-3 w-full">
             <div
                 class="flex-grow flex items-center gap-2 md:gap-4 bg-slate-50 border border-slate-200 rounded-xl md:rounded-2xl px-3 md:px-5 py-2 md:py-3 focus-within:bg-white focus-within:shadow-xl focus-within:shadow-slate-100 transition-all"

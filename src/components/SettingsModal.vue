@@ -47,7 +47,7 @@ const emit = defineEmits<{
                 </button>
             </div>
 
-            <div class="p-8 space-y-8 max-h-[70vh] overflow-y-auto custom-scrollbar">
+            <div class="p-8 py-4 space-y-8 max-h-[70vh] overflow-y-auto custom-scrollbar">
                 <div class="flex p-1.5 bg-slate-100 rounded-2xl w-fit">
                     <button
                         @click="props.apiConfig.mode = 'default'"
