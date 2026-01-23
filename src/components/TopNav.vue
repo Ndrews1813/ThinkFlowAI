@@ -345,15 +345,6 @@ const callAndClose = (fn: () => void) => {
                 <span>{{ props.t('nav.hierarchicalDragging') }}</span>
             </button>
 
-            <button
-                @click="props.config.showMiniMap = !props.config.showMiniMap"
-                class="toolbar-btn border-slate-100"
-                :class="props.config.showMiniMap ? 'text-blue-500 bg-blue-50 border-blue-100' : 'text-slate-400 hover:text-slate-600'"
-            >
-                <Map class="w-4 h-4" />
-                <span>{{ props.t('nav.map') }}</span>
-            </button>
-
             <button @click="callAndClose(props.onGenerateSummary)" class="toolbar-btn text-orange-600 hover:bg-orange-50 border-orange-100">
                 <Sparkles class="w-4 h-4" />
                 <span>{{ props.t('nav.summary') }}</span>
