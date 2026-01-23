@@ -87,7 +87,8 @@ export function useThinkFlow({ t, locale }: { t: Translate; locale: Ref<string> 
         viewport,
         onNodeDragStart,
         onNodeDrag,
-        onNodeDragStop
+        onNodeDragStop,
+        project
     } = useVueFlow()
 
     /**
@@ -961,7 +962,10 @@ export function useThinkFlow({ t, locale }: { t: Translate; locale: Ref<string> 
             addNodes({
                 id: rootId,
                 type: 'window',
-                position: { x: 300, y: 300 },
+                position: project({
+                    x: window.innerWidth / 2 - 140,
+                    y: window.innerHeight / 2 - 90
+                }),
                 data: {
                     label: text,
                     description: t('node.coreIdea'),
