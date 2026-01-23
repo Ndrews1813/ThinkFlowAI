@@ -210,18 +210,48 @@ export function useThinkFlow({ t, locale }: { t: Translate; locale: Ref<string> 
         if (config.snapToAlignment) {
             const snapThreshold = 8
 
-            const getNodeSize = (n: any) => {
+            const getNodeVisualInfo = (n: any, currentPos?: { x: number; y: number }) => {
                 const width = n.dimensions?.width ?? n.measured?.width ?? 280
                 const height = n.dimensions?.height ?? n.measured?.height ?? 180
-                return { width, height }
+
+                // 核心逻辑：计算视觉缩放比例，与 WindowNode.vue 中的逻辑保持一致
+                let scale = 1.0
+                if (activeNodeId.value) {
+                    if (activePath.value.nodeIds.has(n.id)) {
+                        // 在拖拽或处于活跃路径时，节点会放大 1.05
+                        // 注意：WindowNode 中 focus 时是 1.1，但拖拽时通常 input 不会处于 focus 状态
+                        scale = 1.05
+                    } else {
+                        // 非活跃路径节点会缩小并变淡
+                        scale = 0.98
+                    }
+                }
+
+                const x = currentPos?.x ?? n.position.x
+                const y = currentPos?.y ?? n.position.y
+
+                // 因为 CSS transform: scale 默认是从中心缩放，所以视觉上的起始点 (top-left) 会发生偏移
+                const visualWidth = width * scale
+                const visualHeight = height * scale
+                const offsetX = (visualWidth - width) / 2
+                const offsetY = (visualHeight - height) / 2
+
+                return {
+                    width: visualWidth,
+                    height: visualHeight,
+                    x: x - offsetX,
+                    y: y - offsetY,
+                    scale
+                }
             }
 
-            const draggedSize = getNodeSize(draggedStoreNode)
+            const draggedInfo = getNodeVisualInfo(draggedStoreNode, { x: node.position.x, y: node.position.y })
             const proposedX = node.position.x
             const proposedY = node.position.y
 
-            const draggedAnchorsX = [proposedX, proposedX + draggedSize.width / 2, proposedX + draggedSize.width]
-            const draggedAnchorsY = [proposedY, proposedY + draggedSize.height / 2, proposedY + draggedSize.height]
+            // 使用视觉坐标进行对齐计算
+            const draggedAnchorsX = [draggedInfo.x, draggedInfo.x + draggedInfo.width / 2, draggedInfo.x + draggedInfo.width]
+            const draggedAnchorsY = [draggedInfo.y, draggedInfo.y + draggedInfo.height / 2, draggedInfo.y + draggedInfo.height]
 
             let bestX: { delta: number; guide: number } | null = null
             let bestY: { delta: number; guide: number } | null = null
@@ -230,12 +260,9 @@ export function useThinkFlow({ t, locale }: { t: Translate; locale: Ref<string> 
                 if (other.id === node.id) continue
                 if (other.hidden) continue
 
-                const otherSize = getNodeSize(other)
-                const otherX = other.position?.x ?? 0
-                const otherY = other.position?.y ?? 0
-
-                const otherAnchorsX = [otherX, otherX + otherSize.width / 2, otherX + otherSize.width]
-                const otherAnchorsY = [otherY, otherY + otherSize.height / 2, otherY + otherSize.height]
+                const otherInfo = getNodeVisualInfo(other)
+                const otherAnchorsX = [otherInfo.x, otherInfo.x + otherInfo.width / 2, otherInfo.x + otherInfo.width]
+                const otherAnchorsY = [otherInfo.y, otherInfo.y + otherInfo.height / 2, otherInfo.y + otherInfo.height]
 
                 for (const ox of otherAnchorsX) {
                     for (const ax of draggedAnchorsX) {
