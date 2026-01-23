@@ -681,7 +681,8 @@ export function useThinkFlow({ t, locale }: { t: Translate; locale: Ref<string> 
      * 导出：将当前树形结构导出为 Markdown
      * - 以 root 为标题
      * - 子节点按缩进列表输出
-     * - deepDive 生成的详细内容以引用块输出
+     * - 回答内容（deepDive）以引用块输出
+     * - 节点描述（description）紧随标题输出
      */
     const exportMarkdown = () => {
         if (flowNodes.value.length === 0) return
@@ -691,6 +692,14 @@ export function useThinkFlow({ t, locale }: { t: Translate; locale: Ref<string> 
 
         let markdown = `# ${rootNode.data.label}\n\n`
 
+        if (rootNode.data.description) {
+            markdown += `> ${rootNode.data.description}\n\n`
+        }
+
+        if (rootNode.data.detailedContent) {
+            markdown += `## ${t('node.deepDive')}\n\n${rootNode.data.detailedContent}\n\n---\n\n`
+        }
+
         const buildMarkdown = (parentId: string, level: number) => {
             const children = flowEdges.value
                 .filter(e => e.source === parentId)
@@ -699,11 +708,21 @@ export function useThinkFlow({ t, locale }: { t: Translate; locale: Ref<string> 
 
             children.forEach(child => {
                 const indent = '  '.repeat(level - 1)
-                markdown += `${indent}- ${child!.data.label}\n`
+                const detailIndent = '  '.repeat(level)
+
+                // 写入节点标题与描述
+                markdown += `${indent}- **${child!.data.label}**`
+                if (child!.data.description) {
+                    markdown += `: ${child!.data.description}`
+                }
+                markdown += '\n'
+
+                // 如果有深挖回答，以引用块形式展示
                 if (child!.data.detailedContent) {
-                    const detailIndent = '  '.repeat(level)
+                    markdown += `${detailIndent}> **[${t('node.deepDive')}]**\n`
                     markdown += `${detailIndent}> ${child!.data.detailedContent.replace(/\n/g, `\n${detailIndent}> `)}\n`
                 }
+
                 buildMarkdown(child!.id, level + 1)
             })
         }
