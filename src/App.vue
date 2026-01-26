@@ -194,7 +194,7 @@ const fitToView = () => {
 </script>
 
 <template>
-    <div class="h-screen w-screen bg-white font-mono text-slate-800 relative overflow-hidden flex flex-col selection:bg-orange-100">
+    <div class="h-screen w-screen bg-white text-slate-800 relative overflow-hidden flex flex-col selection:bg-orange-100" :class="locale === 'zh' ? 'font-sans-cn' : 'font-mono'">
         <TopNav
             v-if="!isPresenting"
             :t="t"
@@ -342,6 +342,10 @@ body {
 
 .font-mono {
     font-family: 'JetBrains Mono', monospace;
+}
+
+.font-sans-cn {
+    font-family: 'Microsoft YaHei', 'JetBrains Mono', monospace;
 }
 
 .toolbar-btn {
